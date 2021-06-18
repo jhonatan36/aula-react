@@ -1,5 +1,5 @@
 import React from 'react';
-import { PageTitleContainer, PageTitleStyled } from './PageTitle.style';
+import { PageTitleContainer, PageTitleStyled, PageSubTitleStyled } from './PageTitle.style';
 
 interface PageTitleProps{
     title:string;
@@ -10,7 +10,7 @@ const PageTitle: React.FC<PageTitleProps> = (props) => {
     return (
         <PageTitleContainer>
             <PageTitleStyled>{props.title}</PageTitleStyled>
-            {props.subtitle}
+            <PageSubTitleStyled>{props.subtitle}</PageSubTitleStyled>
         </PageTitleContainer>
     );
 }
